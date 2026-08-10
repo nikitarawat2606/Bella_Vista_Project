@@ -60,6 +60,9 @@ This project showcases a restaurant landing page with sections for menu, about, 
 ## github deployed url :
 live url : https://nikitarawat2606.github.io/Bella_Vista_Project/
 
+## vercel live url :
+url : https://bella-vista-project-seven.vercel.app/
+
 ## 🛠️ Setup & Usage
 
 1. Clone the repository:
