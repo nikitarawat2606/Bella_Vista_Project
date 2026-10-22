@@ -1,239 +1,358 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Bella Vista - Authentic Italian Restaurant serving fresh pasta, wood-fired pizzas, and traditional Italian cusine in the heart of the city.">
-        <title>Bella Vista Restaurant - Authentic Italian Cuisine</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bella Vista - Authentic Italian Fine Dining in New Delhi. Fresh hand-crafted pasta, wood-fired pizzas, and classic wines.">
+    <title>Bella Vista | Authentic Italian Dining</title>
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500..800;1,500..800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-    <body>
-        <header class="header">
-            <div class="container">
-                <nav class="navbar">
-                    <div class="logo">
-                        <h1>Bella Vista</h1>
-                        <span class="tagline">Authentic Italian Cuisine</span>
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#menu">Menu</a></li>
-                        <li><a href="#about">About Us</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
-                    </ul>
-                </nav>
+    <!-- Header / Glassmorphism Navigation -->
+    <header class="header">
+        <div class="container navbar">
+            <a href="#home" class="logo">
+                <i class="fa-solid fa-utensils logo-icon"></i>
+                <div class="logo-text">
+                    <h1>Bella Vista</h1>
+                    <span class="tagline">Cucina Italiana</span>
+                </div>
+            </a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home" class="nav-item active">Home</a></li>
+                    <li><a href="#about" class="nav-item">About</a></li>
+                    <li><a href="#menu" class="nav-item">Menu</a></li>
+                    <li><a href="#contact" class="nav-item">Reservations</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-sm btn-primary">Book Table</a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Navigation Menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </div>
-        </header>
+        </div>
+    </header>
 
-
-        <main>
-            <section id="home" class="hero">
-                <div class="hero-content">
-                    <h2>Welcome to Bella Vista</h2>
-                    <p>Experience the authentic taste of Italy in the heart of the city .</p>
-                    <div class="hero-buttons">
-                        <a href="#menu" class="btn btn-primary">View Menu</a>
-                        <a href="#contact" class="btn btn-secondary">Make Reservations</a>
-                    </div>    
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <span class="hero-badge"><i class="fa-solid fa-star"></i> Fine Italian Cuisine</span>
+                <h1 class="hero-title">Experience Authentic Italian Tradition</h1>
+                <p class="hero-desc">Indulge in artisanal wood-fired pizzas, hand-rolled pasta, and organic wine crafted from traditional Rossi family recipes.</p>
+                <div class="hero-buttons">
+                    <a href="#menu" class="btn btn-primary"><i class="fa-solid fa-book-open"></i> Explore Menu</a>
+                    <a href="#contact" class="btn btn-outline"><i class="fa-solid fa-calendar-check"></i> Reserve a Table</a>
                 </div>
-            </section>
-
-            <section id="menu" class="menu">
-                <div class="container">
-                    <h2 class="section-title">Our Menu</h2>
-                    <p class="section-subtitle">Discover our carefully crafted dishes.</p>
-                    
-                    <div class="menu-categories">
-                        <div class="menu-category">
-                            <h3>Appetizers</h3>
-                            <div class="menu-items">
-
-                                <!--first item added-->
-                                <div class="menu-item">
-                                    <div class="menu-item-info">
-                                            <h4>Bruschetta Italiana</h4>
-                                            <p>Fresh tomatoes, basil, and mozzarella on toasted bread.</p>
-                                    </div>
-                                    <span class="price">$12</span>
-                                    
-                                </div>
-
-                                <!--second item added-->
-                                <div class="menu-item">
-                                    <div class="menu-item-info">
-                                            <h4>Antipasto Platter</h4>
-                                            <p>Selection of cured meats, cheeses, and marinated vegetables.</p>
-                                        </div>
-                                        <span class="price">$18</span>
-                                    </div>   
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="about" class="about">
-                <div class="container">
-                    <h2 class="section-title">About Bella Vista </h2>
-                    <div class="about-content">
-                        <div class="about-text">
-                            <h3>Our Story</h3>
-                            <p>Founded in 1985 by the Rossi Family.
-                               Bella Vista has been serving authentic Italian
-                               cuisine for over three decades. Our passion for 
-                               traditional receipes and fresh ingredients has been
-                               made us a beloved destination for food lovers.
-                            </p>   
-                            <p>
-                               Every dish is prepared with love and
-                               attention to detail, using receipes passed
-                               down through generations of Italian chefs.    
-                            </p>
-                        </div>
-
-                        <!--ABOUT sectionImage added -->
-
-                        <div class="about-image">
-                            <img src="https://plus.unsplash.com/premium_photo-1682800179834-c05e7c7d0a09?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant interior">
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--Comtact Us section added-->
-            <section id="contact" class="contact">
-                <div class="container">
-                    <h2 class="section-title">Contact Us</h2>
-                    <div class="contact-content">
-                        <div class="contact-info">
-                            <h3>Get in Touch</h3>
-
-
-                            <div class="contact-item">
-                                <strong>Address:</strong>
-                                <p>123 Italian street, City Center, NY 10001</p>
-                            </div>
-
-
-                            <div class="contact-item">
-                                <strong>Phone:</strong>
-                                <p>(555) 123-4567</p>
-                            </div>
-
-
-                            <div class="contact-item">
-                                <strong>Email:</strong>
-                                <p>info@bellavista.com</p>
-                            </div>                           
-                        </div>
-
-                        <div class="contact-form">
-                            <h3>Make a Reservation</h3>
-                            <p class="">You can book your reservation online easily in just a couple of minutes. 
-                               We take reservations for lunch, just check the availability of your table.
-                            </p>
-                            <form>
-                                <div class="form-group">
-                                    <label for="name">Full Name:</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-
-                                 <div class="form-group">
-                                    <label for="email">Email:</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-
-                                 <div class="form-group">
-                                    <label for="phone">Phone:</label>
-                                    <input type="tel" id="phone" name="phone" >
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="date">Reservation Date:</label>
-                                    <input type="date" id="date" name="date" required>
-                                </div>
-
-                                 <div class="form-group">
-                                    <label for="time">Time:</label>
-                                    <select id="time" name="time" required>
-                                        <option value="">Select Time</option>
-                                        <option value="18:00">6:00 PM</option>
-                                        <option value="19:00">7:00 PM</option>
-                                        <option value="20:00">8:00 PM</option>
-                                        <option value="21:00">9:00 PM</option>
-                                    </select>
-                                </div>
-
-                                <div class="form-group">
-                                    <label for="guests">Number Of Guests:</label>
-                                    <select id="guests" name="guests" required>
-                                        <option value="">Select guests</option>
-                                        <option value="1">1 Guest</option>
-                                        <option value="2">2 Guests</option>
-                                        <option value="3">3 Guests</option>
-                                        <option value="5">5+ Guests</option>
-                                    </select>
-                                </div>
-                                
-                                <div class="form-group">
-                                    <label for="message">Special Requests:</label>
-                                    <textarea id="message" name="message" rows="4" placeholder="Any special dietary requirements or requests..."></textarea>
-                                </div>
-
-                                <button type="submit" class="btn btn-primary">Submit Reservation</button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <div class="container">
                 
-                <div class="footer-content">
-                    
-                    <div class="footer-section">
-                        <h3>Bella Vista</h3>
-                        <p>Authentic Italian cuisine in the heart of the city.</p>
-                        <p>Experience the taste of Italy with every bite. 
-                        </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>35+</h3>
+                        <p>Years Experience</p>
                     </div>
-
-                    <div class="footer-section">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#menu">Menu</a></li>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#contact">Contact Us</a></li>
-                        </ul>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Fresh Ingredients</p>
                     </div>
-
-                    <div class="footer-section">
-                        <h4>Opening Hours</h4>
-                        <p>Monday-Thursday:11:000AM - 10:00PM</p>
-                        <p>Friday-Saturday:11:00 AM - 11:00PM</p>
-                        <p>Suunsay:12:00 PM - 9:00PM</p>                       
+                    <div class="stat-item">
+                        <h3>4.9 ★</h3>
+                        <p>Customer Rating</p>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="footer-section">
-                        <h4>Follow Us</h4>
-                        <div class="social-links">
-                            <a href="#" class="social-link">Facebook</a>
-                            <a href="#" class="social-link">Instagram</a>
-                            <a href="#" class="social-link">Twitter</a>
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container grid-2">
+                <div class="about-image-wrapper">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1000&auto=format&fit=crop" alt="Bella Vista Restaurant Interior" class="about-img primary-img">
+                    <div class="experience-card">
+                        <span class="exp-number">38</span>
+                        <span class="exp-text">Years of Excellence</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tagline">OUR HERITAGE</span>
+                    <h2 class="section-title">Passion Passed Down Through Generations</h2>
+                    <p class="section-desc">Founded in 1985 by the Rossi family, Bella Vista started with a simple vision: bringing authentic, heartwarming recipes from Tuscany straight to your table.</p>
+                    <p class="section-desc">Every dish is prepared using slow-cooked sauces, hand-picked herbs, and premium imported Italian olive oil.</p>
+                    <ul class="feature-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Authentic Wood-Fired Brick Ovens</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Fresh Hand-Made Pasta Daily</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Sommelier Selected Wine Pairings</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section with Dynamic Filter Tabs -->
+        <section id="menu" class="menu section-padding">
+            <div class="container">
+                <div class="text-center">
+                    <span class="section-tagline">DELICIOUS DISHES</span>
+                    <h2 class="section-title">Explore Our Menu</h2>
+                    <p class="section-subtitle">Crafted with fresh organic ingredients and culinary passion.</p>
+                </div>
+
+                <!-- Category Tabs -->
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="all">All Items</button>
+                    <button class="tab-btn" data-category="starters">Starters</button>
+                    <button class="tab-btn" data-category="mains">Main Course</button>
+                    <button class="tab-btn" data-category="desserts">Desserts</button>
+                    <button class="tab-btn" data-category="drinks">Beverages</button>
+                </div>
+
+                <!-- Menu Grid -->
+                <div class="menu-grid" id="menuGrid">
+                    <!-- Starter 1 -->
+                    <div class="menu-card" data-category="starters">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1572695157366-5e585ab2b69f?q=80&w=600&auto=format&fit=crop" alt="Bruschetta Italiana">
+                            <span class="badge">Bestseller</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Bruschetta Italiana</h4>
+                                <span class="price">$14</span>
+                            </div>
+                            <p>Toasted rustic sourdough topped with heirloom tomatoes, fresh basil, extra virgin olive oil, and aged balsamic glaze.</p>
                         </div>
                     </div>
-                </div> 
-                <div class="footer-bottom">
-                    <p>&copy; 2026 Bella Vista Restaurant. All rights reserved.</p>
-                </div>               
+
+                    <!-- Starter 2 -->
+                    <div class="menu-card" data-category="starters">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1541529086526-db283c563270?q=80&w=600&auto=format&fit=crop" alt="Antipasto Platter">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Antipasto Board</h4>
+                                <span class="price">$22</span>
+                            </div>
+                            <p>Artisanal prosciutto, salami, aged Parmigiano Reggiano, marinated olives, and warm focaccia bread.</p>
+                        </div>
+                    </div>
+
+                    <!-- Main 1 -->
+                    <div class="menu-card" data-category="mains">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=600&auto=format&fit=crop" alt="Truffle Tagliatelle">
+                            <span class="badge">Chef Special</span>
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Truffle Tagliatelle</h4>
+                                <span class="price">$28</span>
+                            </div>
+                            <p>Hand-rolled egg tagliatelle pasta served in a rich cream sauce with black winter truffle shavings and Parmesan.</p>
+                        </div>
+                    </div>
+
+                    <!-- Main 2 -->
+                    <div class="menu-card" data-category="mains">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?q=80&w=600&auto=format&fit=crop" alt="Margherita Pizza">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Wood-Fired Margherita</h4>
+                                <span class="price">$19</span>
+                            </div>
+                            <p>Classic San Marzano tomato sauce, fresh mozzarella di bufala, organic basil leaves, and olive oil drizzle.</p>
+                        </div>
+                    </div>
+
+                    <!-- Dessert 1 -->
+                    <div class="menu-card" data-category="desserts">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?q=80&w=600&auto=format&fit=crop" alt="Classic Tiramisu">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Classic Tiramisu</h4>
+                                <span class="price">$12</span>
+                            </div>
+                            <p>Espresso-soaked ladyfingers layered with rich mascarpone cream and dusted with dark Dutch cocoa powder.</p>
+                        </div>
+                    </div>
+
+                    <!-- Drink 1 -->
+                    <div class="menu-card" data-category="drinks">
+                        <div class="card-img-holder">
+                            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?q=80&w=600&auto=format&fit=crop" alt="Chianti Classico Wine">
+                        </div>
+                        <div class="card-details">
+                            <div class="card-header">
+                                <h4>Chianti Classico (Glass)</h4>
+                                <span class="price">$15</span>
+                            </div>
+                            <p>Aged Tuscan red wine featuring rich aromas of wild berries, velvet tannins, and a crisp spicy finish.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservations & Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container">
+                <div class="grid-2 gap-4">
+                    <div class="contact-info-side">
+                        <span class="section-tagline">JOIN US</span>
+                        <h2 class="section-title">Reserve Your Table</h2>
+                        <p class="section-desc">Planning a family dinner or romantic date night? Book your table online in under two minutes.</p>
+
+                        <div class="info-boxes">
+                            <div class="info-card">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <div>
+                                    <h5>Location</h5>
+                                    <p>123 Italian Street, City Center,  NY 10001</p>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-phone"></i>
+                                <div>
+                                    <h5>Phone & Whatsapp</h5>
+                                    <p>+91 (11) 2345-6789</p>
+                                </div>
+                            </div>
+
+                            <div class="info-card">
+                                <i class="fa-solid fa-clock"></i>
+                                <div>
+                                    <h5>Opening Hours</h5>
+                                    <p>Mon - Thu: 11:00 AM - 10:00 PM<br>Fri - Sun: 11:00 AM - 11:30 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="reservation-form-wrapper">
+                        <h3>Book a Table</h3>
+                        <form id="reservationForm">
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="fullName">Full Name</label>
+                                    <input type="text" id="fullName" placeholder="e.g. Adam Smith" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="emailAddr">Email Address</label>
+                                    <input type="email" id="emailAddr" placeholder="name@example.com" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="resDate">Date</label>
+                                    <input type="date" id="resDate" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="resTime">Time</label>
+                                    <select id="resTime" required>
+                                        <option value="">Select Time Slot</option>
+                                        <option value="12:30">12:30 PM (Lunch)</option>
+                                        <option value="14:00">02:00 PM (Lunch)</option>
+                                        <option value="19:00">07:00 PM (Dinner)</option>
+                                        <option value="20:30">08:30 PM (Dinner)</option>
+                                        <option value="21:30">09:30 PM (Dinner)</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="guestCount">Guests</label>
+                                    <select id="guestCount" required>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2" selected>2 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="6">6+ Large Group</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phoneNum">Phone Number</label>
+                                    <input type="tel" id="phoneNum" placeholder="+91 9876543210" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="specialReq">Special Requests (Optional)</label>
+                                <textarea id="specialReq" rows="3" placeholder="Dietary restrictions, anniversary celebration, outdoor seating..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block">Confirm Reservation</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Notification Toast Popup -->
+    <div class="toast" id="toastNotification">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">Reservation confirmed successfully!</span>
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-utensils logo-icon"></i>
+                    <h2>Bella Vista</h2>
+                </div>
+                <p>Authentic Italian fine dining crafted with love, passion, and traditional recipes in the heart of the city.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
             </div>
 
-        </footer>
-    </body>
+            <div class="footer-links">
+                <h4>Quick Navigation</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#contact">Reservations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-hours">
+                <h4>Opening Hours</h4>
+                <p><strong>Mon - Thu:</strong> 11:00 AM - 10:00 PM</p>
+                <p><strong>Fri - Sat:</strong> 11:00 AM - 11:30 PM</p>
+                <p><strong>Sunday:</strong> 12:00 PM - 10:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="container">
+                <p>&copy; 2026 Bella Vista Italian Restaurant. Built with ❤️ for Portfolio.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
